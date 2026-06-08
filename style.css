@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+.main{
+    height: 90vh;
+    width: 30vw;
+    display: flex;
+    text-align: center;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+.btnsList{
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin-top: 20px; */
+}
+.btn{
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
