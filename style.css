@@ -34,6 +34,7 @@
     justify-content: center;
     align-items: center;
     font-size: 26px;
+    color:white
 }
 .input{
     width:100%;
@@ -48,6 +49,17 @@
 }
 .input:focus{
     outline:none
+}
+.output{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: right; */
+    align-items: center;
+    text-align: right;
+    margin-top: 50px;
+    font-size: 30px;
+    height: 60px;
+    width: 100%;
 }
 .orange{
     background-color:#ff9200
