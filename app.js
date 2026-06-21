@@ -25,7 +25,7 @@ var  plusHandler = document.getElementById("plusBtn").addEventListener('click',p
 var  equalHandler = document.getElementById("equalBtn").addEventListener('click',equalHandler)
 function deleteHandler() {
     console.log("deleteHandler")
-    // inputValue.value 
+
 }
 function sevenHandler() {
     console.log("sevenHandler")
@@ -66,7 +66,8 @@ function zeroHandler() {
 }
 function percentHandler() {
     console.log("percentHandler")
-    topArea.textContent = inputValue.value + "%"
+    topArea.textContent += inputValue.value + " % ";
+    inputValue.value = "";
 }
 function nineHandler() {
     console.log("nineHandler")
@@ -86,21 +87,26 @@ function periodHandler() {
 }
 function divideHandler() {
     console.log("divideHandler")
-    inputValue.value += "/";
+    topArea.textContent += inputValue.value + " / ";
+    inputValue.value = "";
 }
 function multiplyHandler() {
     console.log("multiplyHandler")
-    inputValue.value += 'X';
+    topArea.textContent += inputValue.value + " X ";
+    inputValue.value = "";
 }
 function minusHandler() {
     console.log("minusHandler")
-    inputValue.value += "-";
+    topArea.textContent += inputValue.value + " - ";
+    inputValue.value = "";
 }
 function plusHandler() {
     console.log("plusHandler")
-    inputValue.value += "+";
+    topArea.textContent += inputValue.value + " + ";
+    inputValue.value = "";
 }
 function equalHandler() {
     console.log("equalHandler")
-    // inputValue.value = 
+    topArea.textContent += inputValue.value
+    inputValue.value = "";
 }
