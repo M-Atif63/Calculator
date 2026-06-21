@@ -25,7 +25,7 @@ var  plusHandler = document.getElementById("plusBtn").addEventListener('click',p
 var  equalHandler = document.getElementById("equalBtn").addEventListener('click',equalHandler)
 function deleteHandler() {
     console.log("deleteHandler")
-
+    inputValue.value = inputValue.value.slice(0,-1)
 }
 function sevenHandler() {
     console.log("sevenHandler")
@@ -92,7 +92,7 @@ function divideHandler() {
 }
 function multiplyHandler() {
     console.log("multiplyHandler")
-    topArea.textContent += inputValue.value + " X ";
+    topArea.textContent += inputValue.value + " * ";
     inputValue.value = "";
 }
 function minusHandler() {
@@ -108,5 +108,9 @@ function plusHandler() {
 function equalHandler() {
     console.log("equalHandler")
     topArea.textContent += inputValue.value
-    inputValue.value = "";
+    calculation()
+}
+
+function calculation(){
+    inputValue.value = eval(topArea.textContent)
 }
